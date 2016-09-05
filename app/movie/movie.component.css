@@ -1,0 +1,17 @@
+.movie {
+    display:flex;
+}
+
+.movie-info {
+    padding-left: 12px;
+    height: 230px;
+    overflow: hidden;
+}
+
+.movie-header {
+    display:flex;
+}
+
+.movie-header .right {
+    margin-left: auto;
+}
