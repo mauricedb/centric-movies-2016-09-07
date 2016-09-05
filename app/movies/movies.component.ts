@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import { MovieComponent } from '../movie';
 import { MovieService } from '../movie.service';
 
 @Component({
@@ -7,7 +6,6 @@ import { MovieService } from '../movie.service';
   selector: 'app-movies',
   templateUrl: 'movies.component.html',
   styleUrls: ['movies.component.css'],
-  // directives: [MovieComponent],
   providers: [MovieService]
 })
 export class MoviesComponent implements OnInit {
@@ -20,7 +18,7 @@ export class MoviesComponent implements OnInit {
     // this.movies = this.movieService.getMoviesSync();
 
     this.movieService
-      .getMovies()
+      .getMoviesAsync()
       .subscribe(movies => this.movies = movies);
   }
 
