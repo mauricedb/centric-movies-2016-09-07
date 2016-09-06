@@ -15,11 +15,11 @@ export class MoviesComponent implements OnInit {
   constructor(private movieService: MovieService) { }
 
   ngOnInit() {
-    // this.movies = this.movieService.getMoviesSync();
+    this.movies = this.movieService.getMoviesSync();
 
-    this.movieService
-      .getMoviesAsync()
-      .subscribe(movies => this.movies = movies);
+    // this.movieService
+    //   .getMoviesAsync()
+    //   .subscribe(movies => this.movies = movies);
   }
 
 }
